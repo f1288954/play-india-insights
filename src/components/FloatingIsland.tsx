@@ -18,14 +18,11 @@ const FloatingIsland = ({
   return (
     <div 
       className={cn(
-        "p-6 rounded-3xl shadow-xl transform", 
+        "p-6 rounded-xl shadow-xl transform", 
         animationClass,
         color,
         className
       )}
-      style={{
-        clipPath: "polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)"
-      }}
     >
       {children}
     </div>
