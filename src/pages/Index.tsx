@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDownCircle, BarChart, BookOpen, BrainCircuit, Building, Globe, Info, LineChart, Network, PieChart, Trophy, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -423,14 +422,14 @@ const Index = () => {
                     <span className="font-medium">Capacity Growth Cost</span>
                     <span className="text-red-500 font-medium">High</span>
                   </div>
-                  <Progress value={75} className="h-2 bg-gray-200" indicatorClassName="bg-google-red" />
+                  <Progress value={75} className="h-2 bg-gray-200 [&>div]:bg-google-red" />
                 </div>
                 <div className="mt-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="font-medium">Marginal Distribution Cost</span>
                     <span className="text-orange-500 font-medium">Medium</span>
                   </div>
-                  <Progress value={50} className="h-2 bg-gray-200" indicatorClassName="bg-google-yellow" />
+                  <Progress value={50} className="h-2 bg-gray-200 [&>div]:bg-google-yellow" />
                 </div>
               </div>
               
@@ -462,14 +461,14 @@ const Index = () => {
                     <span className="font-medium">Capacity Growth Cost</span>
                     <span className="text-green-500 font-medium">Very Low</span>
                   </div>
-                  <Progress value={15} className="h-2 bg-gray-200" indicatorClassName="bg-google-green" />
+                  <Progress value={15} className="h-2 bg-gray-200 [&>div]:bg-google-green" />
                 </div>
                 <div className="mt-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="font-medium">Marginal Distribution Cost</span>
                     <span className="text-green-500 font-medium">Near Zero</span>
                   </div>
-                  <Progress value={5} className="h-2 bg-gray-200" indicatorClassName="bg-google-blue" />
+                  <Progress value={5} className="h-2 bg-gray-200 [&>div]:bg-google-blue" />
                 </div>
               </div>
             </div>
