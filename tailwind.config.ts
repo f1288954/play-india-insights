@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for the case study
+				google: {
+					blue: '#4285F4',
+					red: '#EA4335',
+					yellow: '#FBBC05',
+					green: '#34A853',
+				},
+				case: {
+					blue: '#1E88E5',
+					lightBlue: '#90CAF9',
+					red: '#E53935',
+					brightRed: '#FF5252',
+					green: '#43A047',
+					brightGreen: '#69F0AE',
+					purple: '#8E24AA',
+					brightPurple: '#EA80FC',
+					orange: '#FB8C00',
+					brightOrange: '#FFAB40',
+					teal: '#00897B',
+					brightTeal: '#64FFDA',
+				},
+				sky: '#87CEEB',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +107,28 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' },
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' },
+				},
+				'rotate-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'float-delay': 'float 7s ease-in-out infinite 1s',
+				'float-slow': 'float 8s ease-in-out infinite 2s',
+				'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
+				'rotate-slow': 'rotate-slow 15s linear infinite',
 			}
 		}
 	},
