@@ -9,11 +9,16 @@ interface FloatingIslandProps {
   animationClass?: string;
 }
 
-const FloatingIsland = ({ className, children, color, animationClass = "animate-float" }: FloatingIslandProps) => {
+const FloatingIsland = ({ 
+  className, 
+  children, 
+  color, 
+  animationClass = "transition-all duration-300 hover:scale-105" 
+}: FloatingIslandProps) => {
   return (
     <div 
       className={cn(
-        "p-6 rounded-3xl shadow-xl transform transition-all duration-300 hover:scale-105", 
+        "p-6 rounded-3xl shadow-xl transform", 
         animationClass,
         color,
         className
